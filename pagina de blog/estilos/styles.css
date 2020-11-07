@@ -1,0 +1,135 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+body {
+  background-color: #000000;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffff;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/*Navegation*/
+.nav-main {
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  padding: 20px 0;
+}
+
+.nav-main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-main ul li {
+  padding: 10px;
+}
+
+.nav-main ul li a {
+  padding: 2px;
+}
+
+.nav-main ul li a:hover {
+  border-bottom: 2px solid #51D1F6;
+  width: 10%;
+}
+
+.nav-main ul .nav-menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 20px;
+}
+
+.nav-brand {
+  width: 50px;
+}
+
+/*Img*/
+.contenedor {
+  width: 100%;
+  position: relative;
+  height: 780px;
+}
+
+.botonAtras, .botonAdelante {
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.botonAtras:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.botonAdelante:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.botonAtras {
+  /* Distancia entre el borde y el elemento desplazado: */
+  left: 25%;
+  /* Dado que el elemento tiene posición relativa con respecto a su contenedor
+       Se puede calcular la posición por medio de algún calculo o simplemente referenciando
+       La posición al 50% de su contenedor padre: */
+  top: calc(35%);
+}
+
+.botonAdelante {
+  /* Distancia entre el borde y el elemento desplazado: */
+  right: 25%;
+  /* Dado que el elemento tiene posición relativa con respecto a su contenedor
+       Se puede calcular la posición por medio de algún calculo o simplemente referenciando
+       La posición al 50% de su contenedor padre: */
+  top: calc(35%);
+}
+
+#imagen {
+  padding-top: 10px;
+  display: block;
+  margin: auto;
+  width: 1000px;
+  height: 600px;
+}
+/*# sourceMappingURL=styles.css.map */
